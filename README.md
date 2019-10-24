@@ -2,10 +2,10 @@
 
 Simple joystick sketch for Arduino Pro Micro
 
-Circuit
-
 <p align="center">
-    <img src="https://github.com/kleberandrade/pringle-drum-arduino-joystick/blob/master/images/Pingle%20Drums.png" weight="600s"/>
+    <img src="https://github.com/kleberandrade/pringle-drum-arduino-joystick/blob/master/images/Pingle%20Drums.png" width="400"/>
+    https://github.com/kleberandrade/pringle-drum-arduino-joystick/blob/master/images/Prototype.jpg
+    <img src="https://github.com/kleberandrade/pringle-drum-arduino-joystick/blob/master/images/Pingle%20Drums.png" width="400"/>
 </p>
 
 ## How it works
@@ -69,7 +69,7 @@ Legend's Beats: The game is very similar to styles like Guitar Hero and Rock Ban
 -   Survey: http://bit.ly/2Bjvni3
 
 <p align="center">
-    <img src="https://cdn.discordapp.com/attachments/330351041394507777/634659071034916864/unknown.png" weight="600s"/>
+    <img src="https://cdn.discordapp.com/attachments/330351041394507777/634659071034916864/unknown.png" weight="600"/>
 </p>
 
 ## Development Steps
