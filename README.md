@@ -4,11 +4,56 @@ Simple joystick sketch for Arduino Pro Micro
 
 ## How it works
 
+Required libraries
 
+```cpp
+#include <Keyboard.h>
+#include "pad.h"
+```
 
+Declaration of constants
 
+```cpp
+#define PIN_UP        A2
+#define PIN_DOWN      A3
+```
 
+Declaration of variables
 
+```cpp
+Pad upPad(PIN_UP, 25, 10);
+Pad downPad(PIN_DOWN, 25, 10);
+```
+
+Initialization serial port and keyboard
+
+```cpp
+void setup() {
+  Serial.begin(9600);
+  Keyboard.begin();
+}
+```
+
+Main loop
+
+```cpp
+void loop() {
+  // Update piezo
+  upPad.update();
+  downPad.update();
+
+  // Debug plotter serial
+  upPad.print(false);
+  downPad.print(true);
+
+  // Key pressed
+  if (upPad.press()   ) Keyboard.press('w');
+  if (downPad.press() ) Keyboard.press('d');
+
+  // Release keys
+  Keyboard.releaseAll();
+}
+```
 
 ## About the game
 
@@ -26,6 +71,10 @@ Part 1 - Test Keyboard library
 Part 2 - Test piezoelectric (piezo) sensors
 
 [![](http://img.youtube.com/vi/wedDKFGgjJs/0.jpg)](http://www.youtube.com/watch?v=wedDKFGgjJs "")
+
+Part 3 - Test filter and pringles
+
+[![](http://img.youtube.com/vi/3L8o1plSuC0/0.jpg)](http://www.youtube.com/watch?v=3L8o1plSuC0 "")
 
 ## References
 
