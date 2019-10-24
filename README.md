@@ -2,6 +2,12 @@
 
 Simple joystick sketch for Arduino Pro Micro
 
+Circuit
+
+<p align="center">
+    <img src="https://github.com/kleberandrade/pringle-drum-arduino-joystick/blob/master/images/Pingle%20Drums.png" weight="600s"/>
+</p>
+
 ## How it works
 
 Required libraries
