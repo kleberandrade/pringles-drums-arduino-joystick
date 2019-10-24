@@ -6,6 +6,10 @@ Simple joystick sketch for Arduino Pro Micro
 
 
 
+
+
+
+
 ## About the game
 
 Legend's Beats: The game is very similar to styles like Guitar Hero and Rock Band, but here you have to hit the beat of the song instead of an instrument note, the beats are represented by enemies and when you hit the beat, the character shoot down the enemy, otherwise you get damage.
@@ -26,6 +30,7 @@ Part 2 - Test piezoelectric (piezo) sensors
 ## References
 
 -   [Keyboard document](https://www.arduino.cc/reference/en/language/functions/usb/keyboard/)
+-   [Queue](https://github.com/sdesalas/Arduino-Queue.h)
 
 ## License
 
