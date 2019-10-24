@@ -14,8 +14,8 @@ Simple joystick sketch for Arduino Pro Micro
 
 ## Project Evolution
 
-[![](https://www.youtube.com/watch?v=3Bw8QX_qXLc/0.jpg)](https://www.youtube.com/watch?v=3Bw8QX_qXLc "")
-[![](https://www.youtube.com/watch?v=wedDKFGgjJs/0.jpg)](https://www.youtube.com/watch?v=wedDKFGgjJs "")
+[![](http://img.youtube.com/vi/3Bw8QX_qXLc/0.jpg)](http://www.youtube.com/watch?v=3Bw8QX_qXLc "")
+[![](http://img.youtube.com/vi/wedDKFGgjJs/0.jpg)](http://www.youtube.com/watch?v=wedDKFGgjJs "")
 
 ## References
 
