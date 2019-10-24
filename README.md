@@ -3,8 +3,7 @@
 Simple joystick sketch for Arduino Pro Micro
 
 <p align="center">
-    <img src="https://github.com/kleberandrade/pringle-drum-arduino-joystick/blob/master/images/Pingle%20Drums.png" width="400"/>
-    https://github.com/kleberandrade/pringle-drum-arduino-joystick/blob/master/images/Prototype.jpg
+    <img src="https://github.com/kleberandrade/pringle-drum-arduino-joystick/blob/master/images/Prototype.jpg" width="400"/>
     <img src="https://github.com/kleberandrade/pringle-drum-arduino-joystick/blob/master/images/Pingle%20Drums.png" width="400"/>
 </p>
 
