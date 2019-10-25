@@ -59,7 +59,7 @@ void Pad::print(bool newLine){
   Serial.print(" ");
   Serial.print(_avg);
   Serial.print(" ");
-  Serial.print(press() ? 100 : 0);
+  Serial.print(press() ? 60 : 0);
   Serial.print(newLine ? "\n" : " ");
 }
 
