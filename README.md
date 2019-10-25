@@ -4,7 +4,18 @@ Simple joystick sketch for Arduino Pro Micro
 
 <p align="center">
     <img src="https://github.com/kleberandrade/pringle-drum-arduino-joystick/blob/master/images/Prototype.jpg" width="600"/>
+</p>
+
+Electrical scheme using 2 piezoelectric 27.5mm, 2 resistors 10K and 1 arduino mini pro.
+
+<p align="center">
     <img src="https://github.com/kleberandrade/pringle-drum-arduino-joystick/blob/master/images/Pingle%20Drums.png" width="600"/>
+</p>
+
+Captured piezoelectric signals, filtered signal using moving average, and button-pressed signal to play.
+
+<p align="center">
+    <img src="https://github.com/kleberandrade/pringle-drum-arduino-joystick/blob/master/images/Signals.png" width="600"/>
 </p>
 
 ## How it works
