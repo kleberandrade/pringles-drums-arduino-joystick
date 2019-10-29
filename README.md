@@ -77,6 +77,8 @@ Legend's Beats: The game is very similar to styles like Guitar Hero and Rock Ban
 
 -   Play game: http://bit.ly/2MnrTRU
 -   Survey: http://bit.ly/2Bjvni3
+-   Forum: https://riot.com/2NosvX3
+-   Article in Versus: http://bit.ly/2JxCmZs
 
 <p align="center">
     <img src="https://cdn.discordapp.com/attachments/330351041394507777/634659071034916864/unknown.png" width="600"/>
