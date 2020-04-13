@@ -1,4 +1,4 @@
-# Pringle Drum Arduino Joystick
+# Pringles Drums Arduino Joystick
 
 Simple joystick sketch for Arduino Pro Micro
 
