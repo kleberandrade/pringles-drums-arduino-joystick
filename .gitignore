@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+
+# Local build tools and reports
+.pio/
+.venv/
+build/
+.metrics/
