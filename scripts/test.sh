@@ -6,6 +6,6 @@ for test in tests/*.cpp; do
   name=$(basename "$test" .cpp)
   "${CXX:-c++}" -std=c++11 -Wall -Wextra -Werror -pedantic \
     -fsanitize=address,undefined -fno-omit-frame-pointer -g \
-    -Iinclude "$test" -o "build/$name"
+    -Iinclude -Itests/fakes "$test" -o "build/$name"
   "./build/$name"
 done
