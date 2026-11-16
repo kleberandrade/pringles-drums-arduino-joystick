@@ -1,5 +1,7 @@
 # Pringles Drums — Arduino USB Keyboard
 
+[![CI](https://github.com/kleberandrade/pringles-drums-arduino-joystick/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/kleberandrade/pringles-drums-arduino-joystick/actions/workflows/ci.yml)
+
 ![Board](https://img.shields.io/badge/board-Pro_Micro_ATmega32U4-00979D)
 ![PlatformIO](https://img.shields.io/badge/PlatformIO-6.1.19-orange)
 ![Keyboard](https://img.shields.io/badge/Arduino_Keyboard-1.0.7-00979D)
@@ -119,8 +121,8 @@ backpressure and calibration mode. Arduino/USB are fakes in host tests: these
 do not prove electrical safety, USB enumeration, input latency or game behavior.
 
 [CI workflow](.github/workflows/ci.yml) runs the same checks on Ubuntu 24.04 with
-Python 3.13.18 for pushes to `main` and pull requests. Its status badge can be
-added after the first published run; no passing CI or coverage claim is made.
+Python 3.13.18 for pushes to `main` and pull requests. The CI badge above
+reflects the published workflow on `main`; no coverage percentage is claimed.
 `requirements-dev.in` records the direct tool dependency; `requirements-dev.txt`
 pins its transitive dependencies for Python 3.13 across platforms. To update it
 with uv, run `uv pip compile --universal --python-version 3.13 --no-header

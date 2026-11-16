@@ -21,3 +21,5 @@
 ## Publication and branch migration
 
 - User authorized pushing the three modernization commits, migrating master to main and following CI until successful. Fetched the remote and confirmed master still pointed to a82236e with no additional remote commits or main branch. Updated the CI branch filter and README to main before publication.
+- Published the three modernization commits plus branch-migration commit 73d4178. Renamed the remote default branch via GitHub’s branch rename API; updated the local branch, tracking branch and origin/HEAD to main.
+- Explicitly dispatched CI on main after the rename. [Run 43800116729](https://github.com/kleberandrade/pringles-drums-arduino-joystick/actions/runs/43800116729) passed: dependency installation, sanitizer host tests, deterministic example, both Pro Micro builds and whitespace check. No CI corrections were needed. Added the real main-branch CI badge and replaced the README’s pre-publication status text. Physical hardware/USB/game testing remains unperformed.
