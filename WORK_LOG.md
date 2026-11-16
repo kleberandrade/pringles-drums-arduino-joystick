@@ -38,3 +38,9 @@
 **Physical validation: PENDING.** Confirm the actual board is a 5V/16MHz Pro Micro (ATmega32U4), measure piezo transients and verify the input protection/supply behavior, calibrate the assembled pads, and test USB enumeration, HID input and the target game on physical hardware. These bench checks remain necessary before declaring the hardware validated. No physical upload, electrical measurement or real HID/game test was performed during modernization or final review.
 
 The outstanding physical checks are documented limitations of the prototype and do not block completion of the software/repository modernization. This review record is published separately and its own commit is verified by CI after push.
+
+## Physical validation checklist — 2026-11-16
+
+- Saved the requested English bench checklist as `docs/physical-validation.md` and linked it from the README assembly section. It covers Pro Micro identification and wiring, piezo input protection and measured rail behavior, pad calibration, USB Keyboard HID and representative game testing, plus evidence fields and completion criteria.
+- All checklist items remain unchecked and physical validation remains **PENDING**. Suggested strike counts and session duration are explicitly identified as acceptance-test proposals, not manufacturer specifications. No upload, physical measurement or real HID event was performed for this documentation change.
+- Verified all local Markdown links resolve and patch whitespace checks pass. Only documentation changed; the publication commit is checked by the existing CI workflow after push.

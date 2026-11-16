@@ -84,6 +84,9 @@ The upload/play steps above are instructions for the builder, not automated
 validation performed on this project. No physical upload or game session has
 been tested during modernization.
 
+Use the [physical validation checklist](docs/physical-validation.md) to record
+board checks, electrical measurements, pad calibration and USB/HID game tests.
+
 ## Behavior and configuration
 
 Each channel clips ADC samples at 40, averages up to 25 samples, triggers above
