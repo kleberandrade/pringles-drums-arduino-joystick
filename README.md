@@ -119,7 +119,7 @@ backpressure and calibration mode. Arduino/USB are fakes in host tests: these
 do not prove electrical safety, USB enumeration, input latency or game behavior.
 
 [CI workflow](.github/workflows/ci.yml) runs the same checks on Ubuntu 24.04 with
-Python 3.13.18 for pushes to `master` and pull requests. Its status badge can be
+Python 3.13.18 for pushes to `main` and pull requests. Its status badge can be
 added after the first published run; no passing CI or coverage claim is made.
 `requirements-dev.in` records the direct tool dependency; `requirements-dev.txt`
 pins its transitive dependencies for Python 3.13 across platforms. To update it

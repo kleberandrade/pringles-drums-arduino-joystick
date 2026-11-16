@@ -17,3 +17,7 @@
 - Verified all local Markdown links resolve, the SVG parses as XML, and git diff --check is clean. Four host test executables pass with ASan/UBSan; the executable example matches its expected four events. Both pinned AVR builds passed again after explicit package pinning.
 - Validated the modern tool environment using temporary CPython 3.13.18 and PlatformIO 6.1.19: both target builds succeeded, 23 locked Python dependencies passed compatibility checks. Generated a universal Python 3.13 dependency lock from requirements-dev.in and pinned CI's Python patch version. The earlier system Python 3.9/LibreSSL warning is absent in this validated environment. GitHub CI itself and all physical/USB/game tests remain unperformed.
 - Removed task-owned temporary Python environments, runtime, download caches, API helper and diagram previews after validation. Kept ignored project build outputs for local inspection. No worktrees were created; no push, deploy or package publication was performed.
+
+## Publication and branch migration
+
+- User authorized pushing the three modernization commits, migrating master to main and following CI until successful. Fetched the remote and confirmed master still pointed to a82236e with no additional remote commits or main branch. Updated the CI branch filter and README to main before publication.
