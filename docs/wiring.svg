@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="790" viewBox="0 0 1100 790">
+<title>Two protected piezo inputs for a 5V Pro Micro</title>
+<desc>Each piezo has a 10k bleed to ground, a 10k series resistor, and two Schottky clamps. Upper clamp anode is input, cathode is VCC; lower clamp anode is ground, cathode is input. A2 maps to w and A3 to d. D4 has an arm switch to ground.</desc>
+<rect width="1100" height="790" fill="#fff"/>
+<style>text{font-family:Arial,sans-serif;font-size:17px;fill:#152b3c}.title{font-size:27px;font-weight:bold}.small{font-size:14px}.wire{stroke:#205c72;stroke-width:3;fill:none}.part{stroke:#152b3c;stroke-width:2.5;fill:white}.node{fill:#205c72}.rail{fill:#b23d28;font-weight:bold}</style>
+<text class="title" x="35" y="42">Pringles Drums · Pro Micro 5V / 16MHz</text>
+<text x="35" y="72">Proposed input protection · repeat the same circuit for both pads</text>
+<rect x="850" y="120" width="210" height="480" rx="12" fill="#edf5f8" stroke="#205c72" stroke-width="3"/>
+<text x="870" y="153" font-weight="bold">Pro Micro</text><text x="870" y="180">ATmega32U4</text>
+<text x="870" y="208" class="small">Native USB → host</text>
+<text x="870" y="230" class="small">USB supplies 5V</text>
+<text x="870" y="560" class="small">Common GND</text>
+<text x="870" y="582" class="small">VCC rail = board 5V</text>
+<g transform="translate(0,280)">
+<text x="35" y="-80" font-weight="bold">Pad 1</text>
+<circle class="part" cx="87" cy="0" r="28"/>
+<path class="part" d="M80 -16 V16 M91 -16 V16"/>
+<text x="35" y="52" class="small">Passive piezo</text>
+<text x="121" y="-13">+</text>
+<path class="wire" d="M115 0 H330 M400 0 H850 M87 28 V90 H245 V60 M245 0 V20"/>
+<rect class="part" x="330" y="-10" width="70" height="20"/>
+<text x="312" y="-27">10kΩ series</text>
+<rect class="part" x="235" y="20" width="20" height="40"/>
+<text x="145" y="43" class="small">10kΩ bleed</text>
+<path class="wire" d="M245 90 V100 M225 100 H265 M232 108 H258 M239 116 H251"/>
+<circle class="node" cx="245" cy="0" r="5"/>
+<circle class="node" cx="525" cy="0" r="5"/>
+<path class="wire" d="M525 0 V-30 M525 -60 V-120 H590 M525 0 V39 M525 65 V100"/>
+<!-- Upper diode: anode at input; cathode at VCC. -->
+<path class="part" d="M514 -30 L525 -58 L536 -30 Z M510 -58 H540 M510 -58 V-64 M540 -58 V-52"/>
+<text x="550" y="-45" class="small">D1 BAT54</text>
+<text x="482" y="-76" class="small">K</text><text x="482" y="-15" class="small">A</text>
+<text x="602" y="-115" class="rail">VCC (+5V)</text>
+<!-- Lower diode: anode at ground; cathode at input. -->
+<path class="part" d="M514 65 L525 39 L536 65 Z M510 39 H540 M510 39 V33 M540 39 V45"/>
+<text x="550" y="60" class="small">D2 BAT54</text>
+<text x="482" y="27" class="small">K</text><text x="482" y="85" class="small">A</text>
+<path class="wire" d="M505 100 H545 M512 108 H538 M519 116 H531"/>
+<text x="655" y="-15">Protected ADC node</text>
+<text x="870" y="7" font-weight="bold">A2 → key 'w'</text>
+</g>
+<g transform="translate(0,535)">
+<text x="35" y="-80" font-weight="bold">Pad 2</text>
+<circle class="part" cx="87" cy="0" r="28"/>
+<path class="part" d="M80 -16 V16 M91 -16 V16"/>
+<text x="35" y="52" class="small">Passive piezo</text>
+<text x="121" y="-13">+</text>
+<path class="wire" d="M115 0 H330 M400 0 H850 M87 28 V90 H245 V60 M245 0 V20"/>
+<rect class="part" x="330" y="-10" width="70" height="20"/>
+<text x="312" y="-27">10kΩ series</text>
+<rect class="part" x="235" y="20" width="20" height="40"/>
+<text x="145" y="43" class="small">10kΩ bleed</text>
+<path class="wire" d="M245 90 V100 M225 100 H265 M232 108 H258 M239 116 H251"/>
+<circle class="node" cx="245" cy="0" r="5"/>
+<circle class="node" cx="525" cy="0" r="5"/>
+<path class="wire" d="M525 0 V-30 M525 -60 V-120 H590 M525 0 V39 M525 65 V100"/>
+<!-- Upper diode: anode at input; cathode at VCC. -->
+<path class="part" d="M514 -30 L525 -58 L536 -30 Z M510 -58 H540 M510 -58 V-64 M540 -58 V-52"/>
+<text x="550" y="-45" class="small">D3 BAT54</text>
+<text x="482" y="-76" class="small">K</text><text x="482" y="-15" class="small">A</text>
+<text x="602" y="-115" class="rail">VCC (+5V)</text>
+<!-- Lower diode: anode at ground; cathode at input. -->
+<path class="part" d="M514 65 L525 39 L536 65 Z M510 39 H540 M510 39 V33 M540 39 V45"/>
+<text x="550" y="60" class="small">D4 BAT54</text>
+<text x="482" y="27" class="small">K</text><text x="482" y="85" class="small">A</text>
+<path class="wire" d="M505 100 H545 M512 108 H538 M519 116 H531"/>
+<text x="655" y="-15">Protected ADC node</text>
+<text x="870" y="7" font-weight="bold">A3 → key 'd'</text>
+</g>
+<text x="35" y="706">D4 arm input</text>
+<path class="wire" d="M190 700 H285 M345 700 H425 V730 M405 730 H445 M412 738 H438 M419 746 H431"/>
+<circle class="part" cx="285" cy="700" r="4"/><circle class="part" cx="345" cy="700" r="4"/>
+<path class="part" d="M288 696 L338 676"/>
+<text x="190" y="767" class="small">Open = disarmed · closed to GND = armed (INPUT_PULLUP)</text>
+<text x="600" y="694" class="small">Add 100nF + 10µF between VCC and GND near clamps.</text>
+<text x="600" y="721" class="small">A = anode · K = cathode · matching rail labels connect.</text>
+<text x="600" y="748" class="small">Read hardware.md: voltage, rail injection and bench checks.</text>
+<text x="600" y="775" class="small">Original project drawing · MIT · not electrically validated</text>
+</svg>
