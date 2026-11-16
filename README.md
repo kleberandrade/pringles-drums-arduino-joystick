@@ -3,7 +3,7 @@
 [![CI](https://github.com/kleberandrade/pringles-drums-arduino-joystick/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/kleberandrade/pringles-drums-arduino-joystick/actions/workflows/ci.yml)
 
 ![Board](https://img.shields.io/badge/board-Pro_Micro_ATmega32U4-00979D)
-![PlatformIO](https://img.shields.io/badge/PlatformIO-6.1.19-orange)
+![PlatformIO](https://img.shields.io/badge/PlatformIO-6.2.0-orange)
 ![Keyboard](https://img.shields.io/badge/Arduino_Keyboard-1.0.7-00979D)
 ![C++](https://img.shields.io/badge/C%2B%2B-11-blue)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
@@ -20,7 +20,7 @@ MIDI output, audio synthesis or velocity-sensitive notes.
 
 - A Pro Micro with native USB, ATmega32U4, **5V/16MHz**, USB data cable and the
   components in the [BOM and assembly guide](docs/hardware.md).
-- Python **3.13** (validated with 3.13.18) with `venv` and pip; PlatformIO Core **6.1.19**.
+- Python **3.13** (validated with 3.13.18) with `venv` and pip; PlatformIO Core **6.2.0**.
 - For host tests: a C++11 compiler (Clang or GCC), POSIX shell and sanitizer
   runtime; on Windows use WSL for these scripts.
 - Internet access for the first build. No Arduino IDE libraries need to be
@@ -123,7 +123,7 @@ do not prove electrical safety, USB enumeration, input latency or game behavior.
 [CI workflow](.github/workflows/ci.yml) runs the same checks on Ubuntu 24.04 with
 Python 3.13.18 for pushes to `main` and pull requests. The CI badge above
 reflects the published workflow on `main`; no coverage percentage is claimed.
-`requirements-dev.in` records the direct tool dependency; `requirements-dev.txt`
+`requirements-dev.in` records the tool dependency and its security floor; `requirements-dev.txt`
 pins its transitive dependencies for Python 3.13 across platforms. To update it
 with uv, run `uv pip compile --universal --python-version 3.13 --no-header
 --no-annotate requirements-dev.in --output-file requirements-dev.txt`, then
